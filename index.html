@@ -131,80 +131,31 @@
     </section>
 
     <!-- ===== PROJECTS ===== -->
-       <section id="projects" class="section alt">
+         <section id="projects" class="section alt">
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
       <div class="container">
         <h2 class="section-title">Projects</h2>
-        <div class="cards projects-grid">
 
-          <!-- Project 1 -->
-          <article class="card project-card">
-            <!-- To add a photo later, replace the whole line below with: <div class="project-img"><img src="robogrip.jpg" alt="RoboGrip robot" /></div> -->
-            <div class="project-img placeholder">Project photo coming soon</div>
-            <div class="project-body">
-              <span class="badge">2nd Position &bull; IIT Bombay Techfest 2025</span>
-              <h3>Manually Controlled Bot</h3>
-              <p class="subtitle">RoboGrip &ndash; Wireless 4WD Pick &amp; Place Bot</p>
-              <ul class="highlights">
-                <li>4WD drive for ramps and rough arena terrain</li>
-                <li>High-torque servo claw for precise pick and place</li>
-                <li>Real-time wireless control for responsive handling</li>
-              </ul>
-              <div class="tags"><span>Arduino</span><span>Robotics</span><span>Embedded Systems</span></div>
-              <button class="link-btn" onclick="document.getElementById('project1').showModal()">View details &rarr;</button>
-            </div>
-          </article>
-
-        </div>
-
-        <!-- Project 1 details (opens when "View details" is clicked) -->
-        <dialog id="project1" class="modal">
-          <button class="modal-close" aria-label="Close" onclick="this.closest('dialog').close()">&times;</button>
-          <div class="modal-body">
-            <span class="badge">2nd Position &bull; IIT Bombay Techfest 2025</span>
-            <h3>Manually Controlled Bot</h3>
-            <p class="subtitle">RoboGrip &ndash; Wireless 4WD Pick &amp; Place Bot</p>
-            <p class="tagline">4WD Mobility. Precision Grip. Wireless Control.</p>
-
-            <!-- To add a photo later, replace the whole line below with: <div class="project-img"><img src="robogrip.jpg" alt="RoboGrip robot" /></div> -->
-            <div class="project-img placeholder">Project photo coming soon</div>
-
-            <h4>Overview</h4>
-            <p>RoboGrip is a manually controlled, high-mobility robot engineered for precise object handling, obstacle navigation, and ramp climbing. It earned second position at IIT Bombay Techfest 2025.</p>
-
-            <h4>Key Features</h4>
-            <ul class="detail-list">
-              <li><strong>4WD mobility:</strong> Brushed motors provide strong traction and stability on challenging terrain, ramps, and inclined surfaces.</li>
-              <li><strong>Precision pick and place:</strong> A waterproof, high-torque servo drives a mechanical claw that grips, lifts, and places objects accurately.</li>
-              <li><strong>Wireless real-time control:</strong> A wireless transmitter and receiver give the operator responsive manual control.</li>
-              <li><strong>ESC motor control:</strong> Electronic Speed Controllers deliver smooth, proportional acceleration and direction changes.</li>
-              <li><strong>Competition-ready design:</strong> A compact build balances maneuverability, stability, and payload handling.</li>
-              <li><strong>High-power battery system:</strong> A LiPo/Li-ion battery system powers the motors, with regulated power for the control electronics.</li>
-              <li><strong>Arduino-based control:</strong> An Arduino coordinates the ESCs and servo, turning wireless commands into movement and gripping.</li>
-            </ul>
-
-            <h4>Core Mechanisms</h4>
-            <dl class="spec">
-              <dt>Mobility</dt><dd>Brushed motors with ESCs</dd>
-              <dt>Gripper</dt><dd>High-torque waterproof servo with mechanical claw</dd>
-              <dt>Control</dt><dd>Arduino with wireless transmitter and receiver</dd>
-              <dt>Power</dt><dd>LiPo/Li-ion battery with buck converter</dd>
-              <dt>Chassis</dt><dd>Compact, lightweight, modular mechanical frame</dd>
-            </dl>
-
-            <h4>Designed For</h4>
-            <div class="tags"><span>Pick &amp; Place Competitions</span><span>Ramp Climbing</span><span>Precision Maneuvering</span><span>Complex Arena Navigation</span><span>Real-Time Manual Control</span></div>
-
-            <h4>Engineering Focus</h4>
-            <p>This project combines embedded systems, wireless communication, motor control, mechanical design, and mechatronic integration in a single competition-ready platform. The main goal was to balance mobility, gripping precision, stability, and operator control.</p>
+        <!-- Project 1 -->
+        <article class="pj-card">
+          <div class="pj-media">
+            <img src="robogrip.jpg" alt="RoboGrip, the manually controlled pick and place robot" loading="lazy" onerror="this.remove()" />
+            <span class="pj-ribbon">2nd Position<small>IIT Bombay Techfest 2025</small></span>
           </div>
-        </dialog>
+          <div class="pj-body">
+            <p class="pj-kicker">Robotics &bull; Mechatronics</p>
+            <h3 class="pj-title">Manually Controlled Bot</h3>
+            <p class="pj-sub">RoboGrip &mdash; a wireless 4WD bot that climbs, grips, and places with precision.</p>
+            <ul class="pj-points">
+              <li>4WD power that conquers ramps and rough arena terrain</li>
+              <li>High-torque servo claw for precise pick and place</li>
+              <li>Real-time wireless control for sharp, responsive handling</li>
+            </ul>
+            <div class="pj-tags"><span>Arduino</span><span>Robotics</span><span>Embedded Systems</span></div>
+            <a href="project1.html" class="pj-btn">Explore Project <span>&rarr;</span></a>
+          </div>
+        </article>
 
-        <script>
-          // Close a project window when the dark background is clicked
-          document.querySelectorAll('dialog.modal').forEach(function (d) {
-            d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
-          });
-        </script>
       </div>
     </section>
 
